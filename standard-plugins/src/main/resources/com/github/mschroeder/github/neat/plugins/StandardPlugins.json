@@ -1,0 +1,170 @@
+{
+    "name": "Neat Standard Plugins",
+    "author": "Markus Schröder",
+    
+    "visible": [
+        {
+            "prefLabel": "New Tab",
+            "altLabels": ["New Document", "Fresh Tab"],
+            "description": "Creates a new tab.",
+            "shortcut" : { "ctrl": true, "alt": false, "shift": false, "key": "T" },
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.newTab",
+            "args": []
+        },
+        {
+            "prefLabel": "Save",
+            "altLabels": [],
+            "description": "",
+            "shortcut" : { "ctrl": true, "alt": false, "shift": false, "key": "S" },
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.save",
+            "args": []
+        },
+        {
+            "prefLabel": "Open",
+            "altLabels": [],
+            "description": "",
+            "shortcut" : { "ctrl": true, "alt": false, "shift": false, "key": "O" },
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.open",
+            "args": []
+        },
+        {
+            "prefLabel": "Close Panel",
+            "altLabels": [],
+            "description": "",
+            "shortcut" : { "ctrl": false, "alt": false, "shift": false, "key": "ESCAPE" },
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.closePanel",
+            "args": []
+        },
+        {
+            "prefLabel": "Close Tab",
+            "altLabels": [],
+            "description": "",
+            "shortcut" : { "ctrl": true, "alt": false, "shift": false, "key": "W" },
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.closeTab",
+            "args": []
+        },
+        {
+            "prefLabel": "Undo",
+            "altLabels": [],
+            "description": "",
+            "shortcut" : { "ctrl": true, "alt": false, "shift": false, "key": "Z" },
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.undoredo",
+            "args": [true]
+        },
+        {
+            "prefLabel": "Redo",
+            "altLabels": [],
+            "description": "",
+            "shortcut" : { "ctrl": true, "alt": false, "shift": false, "key": "Y" },
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.undoredo",
+            "args": [false]
+        },
+        {
+            "prefLabel": "Toggle Wrap",
+            "altLabels": [],
+            "description": "",
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.toggleWrap",
+            "args": []
+        },
+        {
+            "prefLabel": "Search Plugin",
+            "altLabels": [],
+            "description": "",
+            "shortcut" : { "ctrl": true, "alt": false, "shift": false, "key": "SPACE" },
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.searchPlugin",
+            "args": []
+        },
+        {
+            "prefLabel": "Switch Tab Right",
+            "altLabels": [],
+            "description": "",
+            "shortcut" : { "ctrl": false, "alt": true, "shift": false, "key": "RIGHT" },
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.switchTab",
+            "args": [true]
+        },
+        {
+            "prefLabel": "Switch Tab Left",
+            "altLabels": [],
+            "description": "",
+            "shortcut" : { "ctrl": false, "alt": true, "shift": false, "key": "LEFT" },
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.switchTab",
+            "args": [false]
+        },
+        {
+            "prefLabel": "Sort Ascending",
+            "altLabels": [],
+            "description": "",
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.sort",
+            "args": [false]
+        },
+        {
+            "prefLabel": "Sort Descending",
+            "altLabels": [],
+            "description": "",
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.sort",
+            "args": [true]
+        },
+        {
+            "prefLabel": "Lowercase",
+            "altLabels": [],
+            "description": "",
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.changeCase",
+            "args": ["Lowercase"]
+        },
+        {
+            "prefLabel": "Uppercase",
+            "altLabels": [],
+            "description": "",
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.changeCase",
+            "args": ["Uppercase"]
+        },
+        {
+            "prefLabel": "Propercase",
+            "altLabels": [],
+            "description": "",
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.changeCase",
+            "args": ["Propercase"]
+        },
+        {
+            "prefLabel": "Insert Today Date",
+            "altLabels": [],
+            "description": "",
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.insertToday",
+            "args": ["yyyy-MM-dd"]
+        },
+        {
+            "prefLabel": "Insert Now Time",
+            "altLabels": [],
+            "description": "",
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.insertToday",
+            "args": ["HH:mm:ss"]
+        },
+        {
+            "prefLabel": "Select Line",
+            "altLabels": [],
+            "description": "",
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.selectLine",
+            "args": []
+        },
+        {
+            "prefLabel": "Remove Line",
+            "altLabels": [],
+            "description": "",
+            "shortcut" : { "ctrl": true, "alt": false, "shift": false, "key": "K" },
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.removeLine",
+            "args": []
+        },
+        {
+            "prefLabel": "Move Line to Clipboard",
+            "altLabels": [],
+            "description": "",
+            "shortcut" : { "ctrl": true, "alt": false, "shift": false, "key": "X" },
+            "method" : "com.github.mschroeder.github.neat.plugins.StandardEditorFunctions.moveLineToClipboard",
+            "args": []
+        }
+    ],
+    
+    "hidden": [
+    
+    ]
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.mschroeder.github</groupId>
+    <artifactId>standard-plugins</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+    <name>Neat - Standard Plugins</name>
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>neat</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <id>copy</id>
+                        <phase>package</phase>
+                        <configuration>
+                            <target>
+                                <echo>classes</echo>
+                                <copy todir="${user.home}/.neat/plugins" overwrite="true">
+                                    <fileset dir="${basedir}/target/classes" >
+                                    </fileset>
+                                </copy>
+                                
+                                <echo>json config file</echo>
+                                <copy todir="${user.home}/.neat/plugins" overwrite="true" flatten="true">
+                                    <fileset dir="${basedir}" >
+                                        <include name="target/classes/**/*.json" />
+                                    </fileset>
+                                </copy>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    
+    
+    
+</project>
